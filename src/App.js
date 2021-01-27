@@ -1,10 +1,14 @@
-import "./styles.css";
+import ReactDOM from "react-dom";
+import React from "react";
+import "./assets/style.css";
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
+export default class QuizBee extends React.Component {
+  render() {
+    return (
+      <div className="container">
+        <div className="title">DevLab Quiz</div>
+      </div>
+    );
+  }
 }
+ReactDOM.render(<QuizBee />, document.getElementById("root"));
